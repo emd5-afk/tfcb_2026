@@ -10,6 +10,7 @@ This document is the syllabus for this course.
   - [Resources and required materials](#resources-and-required-materials)
   - [Instructors](#instructors)
   - [Teaching Assistants](#teaching-assistants)
+  - [Homework 1](#homework-1)
 
 ## Class schedule
 
@@ -115,3 +116,23 @@ For general inquiries about this course or add codes, please contact GraduateEdu
 ## Teaching Assistant
 
 - [Val Browning](https://sites.uw.edu/vasquezlab/people/val/)
+
+## Homework 1
+
+I invited the teaching assistant, [@vbrow29](https://github.com/vbrow29), and classmates [@cody-jenkins](https://github.com/cody-jenkins) and [@KatRinconess](https://github.com/KatRinconess) as collaborators. The invitations gave them write access, so they can contribute directly to this repository instead of only viewing its public contents.
+
+- [Issue 1: CD4 T-cell UMAP](https://github.com/emd5-afk/tfcb_2026/issues/1)
+- [Issue 2: tidy qPCR data](https://github.com/emd5-afk/tfcb_2026/issues/12)
+- [Experiment log](experiments/2026-10-13_i1_cd4_t_cell_umap.md)
+- [Experiment image](experiments/img/2026-10-13_cd4_t_cell_umap.png)
+- [Tidy qPCR CSV](analysis/qpcr/2026-10-15_i2_tidy_data_exercise/tables/tidy_data.csv)
+- [Commit ending in issue number #1](https://github.com/emd5-afk/tfcb_2026/commit/4ab79f4d2e7645df7aa26bb2f655ecace6a34cef)
+- [Repository labels](https://github.com/emd5-afk/tfcb_2026/labels)
+
+This is my public MCB 536 coursework repository, created by Erin Doherty. Its main folders are:
+
+- `experiments/` — experiment logs, scripts, figures, and images
+- `analysis/` — analysis notes and derived data tables
+- `homeworks/` — homework instructions and materials
+- `lectures/` — lecture notes and course materials
+- `software/` — software setup instructions and test notebooks
