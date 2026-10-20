@@ -53,6 +53,21 @@ slides<br>
 vader.txt<br>
 
 _Paste your SCRIPT here (not the output)_
+#!/bin/bash
+
+# Create the output directory (no error if it already exists)
+mkdir -p homework02
+
+# Write the user/location info to question01.txt
+{
+  echo "My username is $(whoami)"
+  echo "My home directory is $HOME"
+  echo "The contents of the tfcb_2026/lectures/lecture04/ directory are"
+  ls "$HOME/tfcb_2026/lectures/lecture04/"
+} > question01.txt
+
+# Move the file into homework02
+mv question01.txt homework02/
 
 
 ## Problem 2
