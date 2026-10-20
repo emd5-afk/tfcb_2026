@@ -86,10 +86,23 @@ file###.txt
 
 the ### should be the numbers from a list you can find here:
 
-tfcb_2023/homeworks/homework02/list.txt
+tfcb_2026/homeworks/homework02/list.txt
 
 You can make the contents of those files whatever you want (hint: slide 9... )
 
 _Paste your SCRIPT here (not the output)_
+#!/bin/bash
+
+# Run from the directory that contains homework02/
+mkdir -p homework02/question02
+
+(base) root@5828110fe44e:/workspaces/tfcb_2026/homeworks# cd ./homework02
+(base) root@5828110fe44e:/workspaces/tfcb_2026/homeworks/homework02# cd ./question02
+
+while read -r num; do
+  num=${num//$'\r'/}   # strip Windows line endings
+  [ -z "$num" ] && continue
+  echo "This is file $num" > "homework02/question02/file${num}.txt"
+done < homework02/list.txt
 
 
