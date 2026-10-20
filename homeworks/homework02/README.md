@@ -99,10 +99,11 @@ mkdir -p homework02/question02
 (base) root@5828110fe44e:/workspaces/tfcb_2026/homeworks# cd ./homework02
 (base) root@5828110fe44e:/workspaces/tfcb_2026/homeworks/homework02# cd ./question02
 
+# Run from inside homework02/question02/
+# or run from /workspaces/tfcb_2026/homeworks/homework02/makefiles.sh
 while read -r num; do
   num=${num//$'\r'/}   # strip Windows line endings
   [ -z "$num" ] && continue
-  echo "This is file $num" > "homework02/question02/file${num}.txt"
-done < homework02/list.txt
-
+  echo "$num" > "file${num}.txt"
+done < ../list.txt
 
