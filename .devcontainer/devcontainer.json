@@ -1,11 +1,19 @@
 {
     "image": "ghcr.io/fredhutch/tfcb_2026:1.0.0",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.12",
+            "installTools": false
+        }
+    },
+    "postCreateCommand": "python -m venv .venv312 && .venv312/bin/python -m pip install -r requirements.txt",
     // "build": {
     //     "dockerfile": "./Dockerfile",
     // },
     "settings": {
         "extensions.autoUpdate": false,
-        "extensions.autoCheckUpdates": false
+        "extensions.autoCheckUpdates": false,
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv312/bin/python"
     },
     "extensions": [
         // Python extension 
