@@ -1,2 +1,5 @@
 biopython
 ipykernel
+matplotlib
+pandas
+scikit-learn
